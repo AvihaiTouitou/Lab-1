@@ -1,6 +1,9 @@
-apiVersion: v2
-name: Lab-1
-description: A Helm chart for Kubernetes
-type: application
-version: 1.0.0
-appVersion: "1.0.0"
+ReplicaNumber: 3
+
+containers:
+  containerPort: 8080
+  image: 'quay.io/avihaitouiotu/helloworld:v2'
+  tag: 'base'
+
+service:
+  servicePort: 8080
